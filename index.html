@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -158,5 +162,148 @@
         </div>
       </div>
     </section>
+    <section class="best-seller">
+        <div class="best-seller-text">
+          <h2>Best Seller</h2>
+          <p>Inilah pilihan terbaik dari Achie Bakery yang paling disukai pelanggan. Coba sekarang dan rasakan sendiri keistimewaannya!</p>
+        </div>
+        <div class="product-container">
+          <div class="product-content">
+            <div class="product-img">
+              <img src="assets/img/Katalog/donut mini.jpg" alt="">
+            </div>
+            <div class="product-info">
+              <h3>Donut Mini 6 Pcs</h3>
+              <p>Rp. 30.000</p>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-img">
+              <img src="assets/img/Katalog/donut mini.jpg" alt="">
+            </div>
+            <div class="product-info">
+              <h3>Donut Mini 6 Pcs</h3>
+              <p>Rp. 30.000</p>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-img">
+              <img src="assets/img/Katalog/donut mini.jpg" alt="">
+            </div>
+            <div class="product-info">
+              <h3>Donut Mini 6 Pcs</h3>
+              <p>Rp. 30.000</p>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-img">
+              <img src="assets/img/Katalog/donut mini.jpg" alt="">
+            </div>
+            <div class="product-info">
+              <h3>Donut Mini 6 Pcs</h3>
+              <p>Rp. 30.000</p>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-img">
+              <img src="assets/img/Katalog/donut mini.jpg" alt="">
+            </div>
+            <div class="product-info">
+              <h3>Donut Mini 6 Pcs</h3>
+              <p>Rp. 30.000</p>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-img">
+              <img src="assets/img/Katalog/donut mini.jpg" alt="">
+            </div>
+            <div class="product-info">
+              <h3>Donut Mini 6 Pcs</h3>
+              <p>Rp. 30.000</p>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-img">
+              <img src="assets/img/Katalog/donut mini.jpg" alt="">
+            </div>
+            <div class="product-info">
+              <h3>Donut Mini 6 Pcs</h3>
+              <p>Rp. 30.000</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="choose-your-moments">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="cym-image">
+            <img src="assets/img/Katalog/IMG-20250210-WA0003.jpg" alt="">
+          </div>
+          <h3>Party</h3>
+        </div>
+        <div class="item">
+          <div class="cym-image">
+            <img src="assets/img/Katalog/IMG-20250210-WA0003.jpg" alt="">
+          </div>
+          <h3>Party</h3>
+        </div>
+        <div class="item">
+          <div class="cym-image">
+            <img src="assets/img/Katalog/IMG-20250210-WA0003.jpg" alt="">
+          </div>
+          <h3>Party</h3>
+        </div>
+        <div class="item">
+          <div class="cym-image">
+            <img src="assets/img/Katalog/IMG-20250210-WA0003.jpg" alt="">
+          </div>
+          <h3>Party</h3>
+        </div>
+        <div class="item">
+          <div class="cym-image">
+            <img src="assets/img/Katalog/IMG-20250210-WA0003.jpg" alt="">
+          </div>
+          <h3>Party</h3>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:false
+            }
+        }
+    })
+    </script>
   </body>
 </html>
