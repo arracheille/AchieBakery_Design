@@ -56,7 +56,6 @@ p{
   color: var(--dark-brown);
 }
 a{
-  text-decoration: none;
   color: var(--dark-brown);
   font-size: var(--f-p-14);
 }
@@ -73,6 +72,7 @@ img{
   color: var(--cream);
   font-size: var(--f-p-14);
   display: inline-block;
+  text-decoration: none;
 }
 .btn-icon{
   padding: 8px;
@@ -81,4 +81,5 @@ img{
   display: flex;
   justify-content: center;
   display: inline-block;
+  text-decoration: none;
 }
