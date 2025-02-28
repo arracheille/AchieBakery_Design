@@ -7,16 +7,18 @@
   --poltawski: "Poltawski Nowy", serif;
   --poppins: "Poppins", serif;
 
-  --f-p-120: 120;
-  --f-p-90: 90;
-  --f-p-80: 80;
-  --f-p-50: 50;
-  --f-p-40: 40;
-  --f-p-30: 30;
-  --f-p-32: 32;
-  --f-p-20: 20;
-  --f-p-18: 18;
-  --f-p-17: 17;
+  --f-p-120: 120px;
+  --f-p-90: 90px;
+  --f-p-80: 80px;
+  --f-p-50: 50px;
+  --f-p-40: 40px;
+  --f-p-30: 30px;
+  --f-p-32: 32px;
+  --f-p-20: 20px;
+  --f-p-18: 18px;
+  --f-p-14: 14px;
+
+  --border-5: 5px;
 }
 html,
 body,
@@ -32,6 +34,7 @@ li{
 }
 h1, h2, h3, h4, h5 ,h6, a{
   font-family: var(--poltawski);
+  color: var(--dark-brown);
 }
 h1{
   font-size: var(--f-p-80);
@@ -47,9 +50,32 @@ h4{
 }
 p{
   font-family: var(--poppins);
-  font-size: var(--f-p-17);
+  font-size: var(--f-p-14);
+  color: var(--dark-brown);
 }
 a{
   text-decoration: none;
   color: var(--dark-brown);
+  font-size: var(--f-p-14);
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn{
+  padding: 6px 20px;
+  background-color: var(--dark-pink);
+  border-radius: var(--border-5);
+  color: var(--cream);
+  font-size: var(--f-p-14);
+  display: inline-block;
+}
+.btn-icon{
+  padding: 8px;
+  background-color: var(--pink);
+  border-radius: var(--border-5);
+  display: flex;
+  justify-content: center;
+  display: inline-block;
 }
