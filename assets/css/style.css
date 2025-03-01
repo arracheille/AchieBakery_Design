@@ -185,6 +185,8 @@ section.hero .section-container{
 .transactions .heading-text h2,
 .transactions .heading-text p,
 .transactions .carousel-nav a,
+.transaction-text h3,
+.transaction-text p,
 .owl-carousel .item h3 {
     color: var(--cream);
 }
@@ -221,4 +223,29 @@ section.hero .section-container{
     display: flex;
     gap: 10px;
     justify-content: center;
+}
+.transaction-container{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.transaction-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+.transaction-img{
+    width: 100%;
+}
+.transaction-img img{
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    display: block;
+}
+.transaction-text{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    text-align: center;
 }
