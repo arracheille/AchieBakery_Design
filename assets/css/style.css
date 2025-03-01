@@ -36,6 +36,9 @@ header nav .main-nav{
     margin: auto;
     padding-bottom: 8px;
 }
+header nav .main-nav .nav-buttons .btn-icon{
+    background-color: var(--pink);
+}
 header nav .nav-container, header nav ul{
     display: flex;
     align-items: center;
@@ -248,4 +251,74 @@ section.hero .section-container{
     flex-direction: column;
     gap: 13px;
     text-align: center;
+}
+footer{
+    background-color: var(--dark-brown);
+}
+.footer-container{
+    width: 80%;
+    padding-top: 128px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+.footer-content.location iframe{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+.footer-content.logo-links{
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border-left: solid 1px var(--cream);
+    border-right: solid 1px var(--cream);
+}
+.footer-content.logo-links .footer-logo img{
+    width: 80px;
+}
+footer .footer-container h4,
+footer .footer-container .main-footer .footer-content h4,
+footer .footer-container .main-footer .footer-content.logo-links a{
+    color: var(--cream);
+}
+footer .footer-container .footer-content p,
+footer .footer-container .footer-content a{
+    color: var(--pink);
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-container,
+.certificates-container{
+    display: flex;
+    gap: 15px;
+}
+.contact-content .btn-icon{
+    background-color: var(--dark-pink);
+}
+.certificates-content a{
+    color: var(--pink);
+}
+.footer-credit{
+    width: 100%;
+    text-align: center;
+    border-top: solid 1px var(--cream);
+    padding: 30px 0 30px 0;
 }
