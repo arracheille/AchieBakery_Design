@@ -12,10 +12,9 @@
   --f-p-80: 80px;
   --f-p-50: 50px;
   --f-p-40: 40px;
-  --f-p-32: 32px;
+  --f-p-35: 35px;
   --f-p-30: 30px;
-  --f-p-20: 20px;
-  --f-p-20: 20px;
+  --f-p-21: 21px;
   --f-p-18: 18px;
   --f-p-14: 14px;
   --f-p-16: 16px;
@@ -42,10 +41,10 @@ h1{
   font-size: var(--f-p-80);
 }
 h2{
-  font-size: var(--f-p-32);
+  font-size: var(--f-p-35);
 }
 h3{
-  font-size: var(--f-p-20);
+  font-size: var(--f-p-21);
 }
 h4{
   font-size: var(--f-p-18);
@@ -85,4 +84,5 @@ img{
 .underline{
   text-decoration: underline;
   text-align: center;
+  font-weight: 700;
 }
