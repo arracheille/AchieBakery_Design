@@ -1,0 +1,15 @@
+section{
+    min-height: 10vh !important;
+}
+section:not(:first-of-type) .section-container{
+    padding: 60px 0 60px 0;
+}
+section:nth-of-type(3n){
+    background-color: var(--dark-brown);
+}
+section:nth-of-type(3n) h2,
+section:nth-of-type(3n) h3,
+section:nth-of-type(3n) a,
+section:nth-of-type(3n) p{
+    color: var(--cream);
+}
