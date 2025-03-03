@@ -1,8 +1,11 @@
 :root {
-  --dark-brown: #45171D;
+  --dark-brown: #45171d;
   --dark-pink: #a5514b;
   --pink: #ffccd2;
   --cream: #ffeded;
+
+  --shadow-40: rgba(69, 23, 29, 0.4);
+  --shadow-60: rgba(69, 23, 29, 0.6);
 
   --poltawski: "Poltawski Nowy", serif;
   --poppins: "Poppins", serif;
@@ -27,46 +30,52 @@ body,
   margin: 0;
   padding: 0;
 }
-body{
-  background-color: var(--dark-brown);
+body {
+  background-color: var(--cream);
 }
-li{
+li {
   list-style: none;
 }
-h1, h2, h3, h4, h5 ,h6, a{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
   font-family: var(--poltawski);
   color: var(--dark-brown);
 }
-h1{
+h1 {
   font-size: var(--f-p-80);
 }
-h2{
+h2 {
   font-size: var(--f-p-35);
 }
-h3{
+h3 {
   font-size: var(--f-p-21);
 }
-h4{
+h4 {
   font-size: var(--f-p-18);
 }
-p{
+p {
   font-family: var(--poppins);
   font-size: var(--f-p-16);
   color: var(--dark-brown);
   font-weight: 500;
 }
-a{
+a {
   color: var(--dark-brown);
   font-size: var(--f-p-14);
   text-decoration: none;
 }
-img{
+img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.btn{
+.btn {
   padding: 6px 20px;
   background-color: var(--dark-pink);
   border-radius: var(--border-5);
@@ -74,15 +83,125 @@ img{
   font-size: var(--f-p-14);
   display: inline-block;
 }
-.btn-icon{
+.btn-icon {
   padding: 8px;
   border-radius: var(--border-5);
   display: flex;
   justify-content: center;
   display: inline-block;
 }
-.underline{
+section .underline {
+  font-weight: 700;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input-container {
+  position: relative;
+  border: solid 1px var(--dark-brown);
+  background-color: var(--cream);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+.input-container input {
+  background-color: var(--cream);
+  font-family: var(--poppins);
+  font-size: var(--f-p-14);
+  border: none;
+  border-bottom: solid 1px var(--dark-brown);
+  width: 100%;
+  padding-bottom: 3px;
+}
+.input-container input:focus {
+  outline: none;
+}
+.input-container input::placeholder {
+  font-size: var(--f-p-14);
+}
+.input-container i {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  color: var(--shadow-60);
+}
+button {
+  border: none;
+  cursor: pointer;
+  font-family: var(--poltawski);
+  font-size: var(--f-p-14);
+}
+section {
+  min-height: 100vh;
+}
+.section-container {
+  width: 75%;
+  margin: auto;
+  padding: 128px 0 60px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+header {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+nav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cream);
+}
+header nav .top-space {
+  background-color: var(--dark-brown);
+  height: 16px;
+}
+header nav .main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: auto;
+  padding-bottom: 8px;
+}
+header nav .main-nav .nav-buttons .btn-icon {
+  background-color: var(--pink);
+}
+header nav .nav-container,
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav .nav-container {
+  gap: 40px;
+}
+header nav ul {
+  gap: 15px;
+}
+header nav .nav-container .nav-links .nav-link a {
+  font-family: var(--poppins);
+  font-weight: 500;
+}
+header nav .nav-logo {
+  background-color: var(--dark-brown);
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+}
+header nav .nav-logo img {
+  width: 35px;
+}
+.underline {
   text-decoration: underline;
   text-align: center;
-  font-weight: 700;
+}
+.a-poppins {
+  font-family: var(--poppins);
+  font-weight: 600;
 }
