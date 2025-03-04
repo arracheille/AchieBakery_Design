@@ -90,8 +90,11 @@ img {
   justify-content: center;
   display: inline-block;
 }
-section .underline {
-  font-weight: 700;
+button {
+  border: none;
+  cursor: pointer;
+  font-family: var(--poltawski);
+  font-size: var(--f-p-14);
 }
 form {
   display: flex;
@@ -99,24 +102,36 @@ form {
   gap: 20px;
 }
 .input-container {
-  position: relative;
-  border: solid 1px var(--dark-brown);
   background-color: var(--cream);
-  padding: 12px;
+  position: relative;
   display: flex;
   align-items: center;
+  border-bottom: solid 1px var(--dark-brown);
+  padding: 15px 12px 8px 12px;
 }
 .input-container input {
   background-color: var(--cream);
-  font-family: var(--poppins);
-  font-size: var(--f-p-14);
   border: none;
   border-bottom: solid 1px var(--dark-brown);
   width: 100%;
   padding-bottom: 3px;
+  font-family: var(--poppins);
+  font-weight: 500;
 }
-.input-container input:focus {
+.input-container input:focus,
+select:focus {
   outline: none;
+}
+select {
+  border: 0;
+  border-bottom: solid 2px var(--dark-brown);
+  width: 15vw;
+  font-family: var(--poppins);
+  font-weight: 500;
+  font-size: var(--f-p-14);
+  color: var(--dark-pink);
+  background-color: var(--cream);
+  padding-bottom: 2px;
 }
 .input-container input::placeholder {
   font-size: var(--f-p-14);
@@ -126,12 +141,6 @@ form {
   right: 12px;
   cursor: pointer;
   color: var(--shadow-60);
-}
-button {
-  border: none;
-  cursor: pointer;
-  font-family: var(--poltawski);
-  font-size: var(--f-p-14);
 }
 section {
   min-height: 100vh;
@@ -200,6 +209,9 @@ header nav .nav-logo img {
 .underline {
   text-decoration: underline;
   text-align: center;
+}
+section .underline {
+  font-weight: 700;
 }
 .a-poppins {
   font-family: var(--poppins);

@@ -94,7 +94,7 @@ section.hero .section-container{
 }
 .product-container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(14vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(14vw, 1fr));
     gap: 80px;
 }
 .product-content {
@@ -119,7 +119,7 @@ section.hero .section-container{
 .transactions .carousel-nav a,
 .transaction-text h3,
 .transaction-text p,
-.owl-carousel .item h3 {
+.categories .owl-carousel .item h3 {
     color: var(--cream);
 }
 .owl-carousel .item,
@@ -146,6 +146,7 @@ section.hero .section-container{
 .carousel-nav .custom-prev,
 .carousel-nav .custom-next{
     background-color: var(--cream);
+    color: var(--dark-brown);
     width: 40px;
     height: 40px;
     border: none;

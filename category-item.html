@@ -30,27 +30,14 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <style>
-      section {
-        min-height: 10vh !important;
+      .heading-text {
+        text-align: start !important;
+        margin: 0 !important;
       }
-      section:nth-of-type(1) .section-container {
-        padding: 128px 0 60px 0 !important;
-      }
-      .section-container {
-        padding: 60px 0 60px 0 !important;
-      }
-      section:nth-of-type(3n),
-      section:nth-of-type(2) .section-container {
-        padding: 0 0 60px 0 !important;
-      }
-      section:nth-of-type(3n) {
-        background-color: var(--dark-brown);
-      }
-      section:nth-of-type(3n) h2,
-      section:nth-of-type(3n) h3,
-      section:nth-of-type(3n) a,
-      section:nth-of-type(3n) p {
-        color: var(--cream);
+      .heading-filter {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
       }
     </style>
   </head>
@@ -96,9 +83,32 @@
 
     <section class="brownies">
       <div class="section-container brownies">
-        <div class="heading-text">
-          <h2 data-aos="fade-down" data-aos-duration="500">Brownies</h2>
-          <a href="#" class="underline">Tampilkan Lebih Banyak</a>
+        <div class="heading-filter">
+          <div class="heading-text">
+            <h2 data-aos="fade-down" data-aos-duration="500">Brownies</h2>
+            <p data-aos="fade-down" data-aos-duration="600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              vitae laboriosam voluptates nesciunt atque distinctio, quae facere
+              enim excepturi veritatis accusamus commodi ipsa fugiat repudiandae
+              ullam doloribus, neque fuga harum.
+            </p>
+          </div>
+          <div
+            class="filter-container"
+            data-aos="fade-down"
+            data-aos-duration="500"
+          >
+            <form action="">
+              <select>
+                <option value="" disabled selected>
+                  Urutkan berdasarkan..
+                </option>
+                <option value="terbaru">Terbaru</option>
+                <option value="terlama">Terlama</option>
+                <option value="terpopuler">Terpopuler</option>
+              </select>
+            </form>
+          </div>
         </div>
         <div
           class="product-container"
@@ -142,160 +152,40 @@
               <p>Rp. 30.000</p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="tart">
-      <div class="section-container tart">
-        <div class="heading-text">
-          <h2 data-aos="fade-down" data-aos-duration="500">Tart</h2>
-          <a href="#" class="underline">Tampilkan Lebih Banyak</a>
-        </div>
-        <div
-          class="product-container"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-back"
-          data-aos-duration="700"
-        >
           <div class="product-content">
             <div class="product-img">
-              <img src="assets/img/Katalog/cake labubu.jpg" alt="" />
+              <img src="assets/img/Katalog/brownies sekat.jpg" alt="" />
             </div>
             <div class="product-info">
-              <h3>Tart Ulang Tahun</h3>
-              <p>Rp. 200.000</p>
+              <h3>Brownies Sekat 25 Pcs</h3>
+              <p>Rp. 30.000</p>
             </div>
           </div>
           <div class="product-content">
             <div class="product-img">
-              <img src="assets/img/Katalog/cake brown.jpg" alt="" />
+              <img src="assets/img/Katalog/brownies sekat.jpg" alt="" />
             </div>
             <div class="product-info">
-              <h3>Tart Ulang Tahun</h3>
-              <p>Rp. 200.000</p>
+              <h3>Brownies Sekat 25 Pcs</h3>
+              <p>Rp. 30.000</p>
             </div>
           </div>
           <div class="product-content">
             <div class="product-img">
-              <img src="assets/img/Katalog/cake spongebob.jpg" alt="" />
+              <img src="assets/img/Katalog/brownies sekat.jpg" alt="" />
             </div>
             <div class="product-info">
-              <h3>Tart Ulang Tahun</h3>
-              <p>Rp. 200.000</p>
+              <h3>Brownies Sekat 25 Pcs</h3>
+              <p>Rp. 30.000</p>
             </div>
           </div>
           <div class="product-content">
             <div class="product-img">
-              <img src="assets/img/Katalog/cake ungu 17.jpg" alt="" />
+              <img src="assets/img/Katalog/brownies sekat.jpg" alt="" />
             </div>
             <div class="product-info">
-              <h3>Tart Ulang Tahun</h3>
-              <p>Rp. 200.000</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="kuker">
-      <div class="section-container kuker">
-        <div class="heading-text">
-          <h2 data-aos="fade-down" data-aos-duration="500">Kue Kering</h2>
-          <a href="#" class="underline">Tampilkan Lebih Banyak</a>
-        </div>
-        <div
-          class="product-container"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-back"
-          data-aos-duration="700"
-        >
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/cake labubu.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h3>Tart Ulang Tahun</h3>
-              <p>Rp. 200.000</p>
-            </div>
-          </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/cake brown.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h3>Tart Ulang Tahun</h3>
-              <p>Rp. 200.000</p>
-            </div>
-          </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/cake spongebob.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h3>Tart Ulang Tahun</h3>
-              <p>Rp. 200.000</p>
-            </div>
-          </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/cake ungu 17.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h3>Tart Ulang Tahun</h3>
-              <p>Rp. 200.000</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="donat">
-      <div class="section-container donat">
-        <div class="heading-text">
-          <h2 data-aos="fade-down" data-aos-duration="500">Donat</h2>
-          <a href="#" class="underline">Tampilkan Lebih Banyak</a>
-        </div>
-        <div
-          class="product-container"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-back"
-          data-aos-duration="700"
-        >
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/cake labubu.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h3>Tart Ulang Tahun</h3>
-              <p>Rp. 200.000</p>
-            </div>
-          </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/cake brown.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h3>Tart Ulang Tahun</h3>
-              <p>Rp. 200.000</p>
-            </div>
-          </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/cake spongebob.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h3>Tart Ulang Tahun</h3>
-              <p>Rp. 200.000</p>
-            </div>
-          </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/cake ungu 17.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h3>Tart Ulang Tahun</h3>
-              <p>Rp. 200.000</p>
+              <h3>Brownies Sekat 25 Pcs</h3>
+              <p>Rp. 30.000</p>
             </div>
           </div>
         </div>

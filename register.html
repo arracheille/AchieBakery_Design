@@ -16,14 +16,6 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="assets/css/index.css" />
@@ -91,7 +83,11 @@
                   <i class="fa fa-eye" id="togglePassword"></i>
                 </div>
                 <div class="input-container">
-                  <input type="password" id="passwordconfirmation" placeholder="Konfirmasi Password" />
+                  <input
+                    type="password"
+                    id="passwordconfirmation"
+                    placeholder="Konfirmasi Password"
+                  />
                   <i class="fa fa-eye" id="togglePasswordconfirmation"></i>
                 </div>
                 <button type="submit" class="btn">Daftar</button>
@@ -105,6 +101,8 @@
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
       document
@@ -136,6 +134,8 @@
             this.classList.add("fa-eye");
           }
         });
+
+      AOS.init;
     </script>
   </body>
 </html>
