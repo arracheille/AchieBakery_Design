@@ -2,7 +2,7 @@
   --dark-brown: #45171d;
   --dark-pink: #a5514b;
   --pink: #ffccd2;
-  --cream: #ffeded;
+  --cream: #fff3f3;
 
   --shadow-40: rgba(69, 23, 29, 0.4);
   --shadow-60: rgba(69, 23, 29, 0.6);
@@ -23,6 +23,9 @@
   --f-p-16: 16px;
 
   --border-5: 5px;
+}
+::-webkit-scrollbar {
+  width: 0;
 }
 html,
 body,
@@ -146,7 +149,7 @@ section {
   min-height: 100vh;
 }
 .section-container {
-  width: 75%;
+  width: 85%;
   margin: auto;
   padding: 128px 0 60px 0;
   box-sizing: border-box;
@@ -176,7 +179,7 @@ header nav .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 75%;
+  width: 85%;
   margin: auto;
   padding-bottom: 8px;
 }
