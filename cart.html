@@ -16,28 +16,84 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <style>
-      .heading-text {
-        text-align: start !important;
-        margin: 0 !important;
+      section {
+        min-height: 10vh;
       }
-      .heading-filter {
+      .section-container {
+        flex-direction: row;
+        gap: 10vw;
+      }
+      .cart-title {
         display: flex;
-        align-items: end;
+        align-items: center;
         justify-content: space-between;
+      }
+      .cart-title p {
+        color: var(--dark-pink);
+      }
+      .cart-container {
+        width: 100%;
+      }
+      .cart-container,
+      .cart-product-container,
+      .cart-total-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .cart-container,
+      .cart-product-container {
+        gap: 30px;
+      }
+      .cart-product-content {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      .cart-product-content .product-img {
+        max-width: 10vw;
+      }
+      .item-quantity {
+        display: flex;
+        gap: 10px;
+      }
+      .item-quantity button {
+        background-color: var(--dark-brown);
+        color: var(--cream);
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+      .cart-product-content .button-delete {
+        margin-left: auto;
+        background-color: var(--dark-pink);
+        color: var(--cream);
+      }
+      .cart-total-container {
+        gap: 20px;
+        width: 35vw;
+        padding: 30px;
+        background-color: var(--pink);
+        height: 100%;
+      }
+      .cart-total-container .btn {
+        background-color: var(--dark-brown);
+      }
+      .cart-total-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .cart-total-content h5 {
+        color: var(--dark-pink);
+      }
+      .cart-total-content hr {
+        border: 1px solid var(--dark-brown);
       }
     </style>
   </head>
@@ -81,113 +137,53 @@
       </nav>
     </header>
 
-    <section class="brownies">
-      <div class="section-container brownies">
-        <div class="heading-filter">
-          <div class="heading-text">
-            <h2 data-aos="fade-down" data-aos-duration="500">Brownies</h2>
-            <p data-aos="fade-down" data-aos-duration="600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              vitae laboriosam voluptates nesciunt atque distinctio, quae facere
-              enim excepturi veritatis accusamus commodi ipsa fugiat repudiandae
-              ullam doloribus, neque fuga harum.
+    <section class="cart">
+      <div class="section-container cart">
+        <div class="cart-container">
+          <h2>Keranjangmu</h2>
+          <div class="cart-title">
+            <label class="label-checkbox">
+              <input type="checkbox" id="checkAll" onclick="toggleAll(this)" />
+              Centang Semua
+            </label>
+            <p>
+              <span id="checked-item-count">3</span> dari
+              <span id="itemCount">10</span> produk dipilih
             </p>
           </div>
-          <div
-            class="filter-container"
-            data-aos="fade-down"
-            data-aos-duration="500"
-          >
-            <form action="">
-              <select>
-                <option value="" disabled selected>
-                  Urutkan berdasarkan..
-                </option>
-                <option value="terbaru">Terbaru</option>
-                <option value="terlama">Terlama</option>
-                <option value="terpopuler">Terpopuler</option>
-              </select>
-            </form>
+          <div class="cart-product-container">
+            <div class="cart-product-content">
+              <input
+                type="checkbox"
+                class="itemCheckbox"
+                onchange="updateTotal()"
+              />
+              <div class="product-img">
+                <img src="assets/img/Katalog/brownies hero.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3>Brownies Sekat 25 Pcs</h3>
+                <p>Rp. 30.000</p>
+                <div class="item-quantity">
+                  <button><i class="fa-solid fa-plus"></i></button>
+                  <p>1</p>
+                  <button><i class="fa-solid fa-minus"></i></button>
+                </div>
+              </div>
+              <button class="btn-icon button-delete">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
           </div>
         </div>
-        <div
-          class="product-container"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-back"
-          data-aos-duration="700"
-        >
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/brownies sekat.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h4>Brownies Sekat 25 Pcs</h4>
-              <p>Rp. 30.000</p>
-            </div>
+        <div class="cart-total-container">
+          <div class="cart-total-content">
+            <h3>Total</h3>
+            <h5>3 Produk</h5>
+            <hr />
+            <h2>Rp. 60.000</h2>
           </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/brownies sekat.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h4>Brownies Sekat 25 Pcs</h4>
-              <p>Rp. 30.000</p>
-            </div>
-          </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/brownies sekat.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h4>Brownies Sekat 25 Pcs</h4>
-              <p>Rp. 30.000</p>
-            </div>
-          </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/brownies sekat.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h4>Brownies Sekat 25 Pcs</h4>
-              <p>Rp. 30.000</p>
-            </div>
-          </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/brownies sekat.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h4>Brownies Sekat 25 Pcs</h4>
-              <p>Rp. 30.000</p>
-            </div>
-          </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/brownies sekat.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h4>Brownies Sekat 25 Pcs</h4>
-              <p>Rp. 30.000</p>
-            </div>
-          </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/brownies sekat.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h4>Brownies Sekat 25 Pcs</h4>
-              <p>Rp. 30.000</p>
-            </div>
-          </div>
-          <div class="product-content">
-            <div class="product-img">
-              <img src="assets/img/Katalog/brownies sekat.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h4>Brownies Sekat 25 Pcs</h4>
-              <p>Rp. 30.000</p>
-            </div>
-          </div>
+          <button class="btn">Pesan</button>
         </div>
       </div>
     </section>
@@ -218,14 +214,14 @@
             <a href="#" class="underline">Tentang Achie Bakery</a>
           </div>
           <div class="footer-content about">
-            <div class="about-content">
+            <div class="about-container">
               <h5>Tentang Kami</h5>
               <p>
                 Minimal pre order adalah h-3. Kami menerima pesanan setiap hari
                 kecuali h-3 lebaran.
               </p>
             </div>
-            <div class="about-content">
+            <div class="about-container">
               <h5>Hubungi Kami di</h5>
               <ul class="contact-container">
                 <li class="contact-content">
@@ -250,7 +246,7 @@
                 </li>
               </ul>
             </div>
-            <div class="about-content">
+            <div class="about-container">
               <h5>Sertifikat Kami</h5>
               <ul class="certificates-container">
                 <li class="certificates-content">
