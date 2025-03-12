@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achie Bakery - Home</title>
+
+    <script
+      src="https://kit.fontawesome.com/1a293db120.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      .product-preview span {
+        font-family: var(--poppins);
+      }
+      .product-preview-imgs .product-img {
+        width: 35vw;
+      }
+      .carousel-nav {
+        justify-content: end;
+        gap: 10px;
+      }
+      .carousel-nav .carousel-btn {
+        background-color: var(--dark-brown);
+        color: var(--cream);
+      }
+      .product-preview-container {
+        display: flex;
+        gap: 50px;
+      }
+      .product-preview-img-desc,
+      .product-img-slider,
+      .product-preview-imgs,
+      .actions {
+        display: flex;
+      }
+      .product-preview-img-desc,
+      .product-preview-imgs,
+      .actions {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .product-preview-img-desc p:last-of-type {
+        color: var(--dark-pink);
+      }
+      .product-img-slider {
+        justify-content: space-between;
+      }
+      .product-slider-imgs .product-img {
+        width: 5vw;
+      }
+      .product-preview-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+      }
+      .variants-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .option-variants {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 6px 10px;
+        background-color: var(--cream);
+        color: var(--dark-pink);
+        border: solid 2px var(--dark-pink);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.5s ease, color 0.5s ease;
+      }
+      input[type="radio"] {
+        display: none;
+      }
+      input[type="radio"]:checked + .option-variants,
+      .option-variants:hover {
+        background-color: var(--dark-pink);
+        color: var(--cream);
+      }
+      .option-variants .product-img {
+        width: 30px;
+        border-radius: 5px;
+      }
+      .quantity-chat {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .quantity-chat .btn-icon {
+        background-color: var(--dark-pink);
+        color: var(--cream);
+      }
+      .actions .btn {
+        padding: 11px;
+        background-color: var(--pink);
+        color: var(--dark-brown);
+      }
+      .actions .btn:last-child {
+        background-color: var(--dark-brown);
+        color: var(--pink);
+      }
+      section.recommends {
+        min-height: 10vh;
+      }
+      .recommends {
+        padding: 60px 0 60px 0;
+        background-color: var(--dark-brown);
+      }
+      .recommends h2,
+      .recommends h4,
+      .recommends a,
+      .recommends p {
+        color: var(--cream);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="top-space"></div>
+        <div class="main-nav">
+          <div class="nav-container">
+            <div class="nav-logo">
+              <img
+                src="assets/img/Logo/Logo Achie Bakery.png"
+                alt="Navbar Logo"
+              />
+            </div>
+            <ul class="nav-links">
+              <li class="nav-link"><a href="#">Beranda</a></li>
+              <li class="nav-link"><a href="category.html">Menu</a></li>
+              <li class="nav-link"><a href="#">Pilih Momenmu</a></li>
+              <li class="nav-link"><a href="#">Tentang Achie Bakery</a></li>
+            </ul>
+          </div>
+          <ul class="nav-buttons">
+            <li>
+              <a href="#" class="btn-icon"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="btn-icon"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="btn-icon"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li><a href="#" class="btn">Masuk</a></li>
+            <li><a href="#" class="btn">Daftar</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="product-preview">
+      <div class="section-container product-preview">
+        <span
+          ><a href="#">Menu</a> > <a href="#">Brownies</a> >
+          <a href="#">Brownies Sekat 25 Pcs</a></span
+        >
+        <div class="product-preview-container">
+          <div class="product-preview-img-desc">
+            <div class="product-preview-imgs">
+              <div class="product-img">
+                <img src="assets/img/Katalog/brownies hero.jpg" alt="" />
+              </div>
+              <div class="product-img-slider">
+                <div class="product-slider-imgs">
+                  <div class="product-img">
+                    <img src="assets/img/Katalog/brownies hero.jpg" alt="" />
+                  </div>
+                  <div class="product-img">
+                    <img src="assets/img/Katalog/brownies hero.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="carousel-nav">
+                  <button class="carousel-btn prev">❮</button>
+                  <button class="carousel-btn next">❯</button>
+                </div>
+              </div>
+            </div>
+            <p>
+              Fudged brownies dengan rasa manis dan sedikit pahit, autentik dari
+              Achie Bakery.
+            </p>
+            <p>Ukuran 30 cm dengan 25 potongan, 5-8 orang.</p>
+          </div>
+          <div class="product-preview-info">
+            <h2>Brownies Box 25 Potong</h2>
+            <div class="price-orders">
+              <h3>Rp. 60.000</h3>
+              <p>100 Orang memesan ini</p>
+            </div>
+            <div class="variants-container">
+              <input
+                type="radio"
+                id="option1"
+                name="options"
+                value="1"
+                checked
+              />
+              <label for="option1" class="option-variants">
+                <div class="product-img">
+                  <img src="assets/img/Katalog/brownies hero.jpg" alt="" />
+                </div>
+                Semua Varian
+              </label>
+
+              <input type="radio" id="option2" name="options" value="2" />
+              <label for="option2" class="option-variants">
+                <div class="product-img">
+                  <img src="assets/img/Katalog/brownies hero.jpg" alt="" />
+                </div>
+                Semua Varian
+              </label>
+            </div>
+            <div class="actions">
+              <div class="quantity-chat">
+                <div class="item-quantity">
+                  <button><i class="fa-solid fa-plus"></i></button>
+                  <p>1</p>
+                  <button><i class="fa-solid fa-minus"></i></button>
+                </div>
+                <a href="#" class="btn-icon"
+                  ><i class="fa-solid fa-comment-dots"></i
+                ></a>
+              </div>
+              <button class="btn">Masukkan ke Keranjang</button>
+              <button class="btn">Pesan Sekarang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommends">
+      <div class="section-container recommends">
+        <div class="heading-text">
+          <h2 data-aos="fade-down" data-aos-duration="500">
+            Anda Mungkin Juga Suka..
+          </h2>
+          <a href="#" class="underline">Tampilkan Lebih Banyak</a>
+        </div>
+        <div
+          class="product-container"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-duration="700"
+        >
+          <div class="product-content">
+            <div class="product-img">
+              <img src="assets/img/Katalog/cake labubu.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <h4>Tart Ulang Tahun</h4>
+              <p>Rp. 200.000</p>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-img">
+              <img src="assets/img/Katalog/cake brown.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <h4>Tart Ulang Tahun</h4>
+              <p>Rp. 200.000</p>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-img">
+              <img src="assets/img/Katalog/cake spongebob.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <h4>Tart Ulang Tahun</h4>
+              <p>Rp. 200.000</p>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-img">
+              <img src="assets/img/Katalog/cake ungu 17.jpg" alt="" />
+            </div>
+            <div class="product-info">
+              <h4>Tart Ulang Tahun</h4>
+              <p>Rp. 200.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="main-footer">
+          <div class="footer-content location">
+            <h5>Lokasi Kami</h5>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d15829.13964193837!2d109.3218138004441!3d-7.3218598484549196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sid!4v1740852575605!5m2!1sen!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p>Desa Pekalongan 01/05, Bojongsari, Purbalingga, Jawa Tengah</p>
+          </div>
+          <div class="footer-content logo-links">
+            <span class="footer-logo">
+              <img src="assets/img/Logo/Logo Achie Bakery.png" alt="" />
+            </span>
+            <a href="#" class="underline">Beranda</a>
+            <a href="#" class="underline">Menu</a>
+            <a href="#" class="underline">Pilih Momenmu</a>
+            <a href="#" class="underline">Tentang Achie Bakery</a>
+          </div>
+          <div class="footer-content about">
+            <div class="about-container">
+              <h5>Tentang Kami</h5>
+              <p>
+                Minimal pre order adalah h-3. Kami menerima pesanan setiap hari
+                kecuali h-3 lebaran.
+              </p>
+            </div>
+            <div class="about-container">
+              <h5>Hubungi Kami di</h5>
+              <ul class="contact-container">
+                <li class="contact-content">
+                  <a href="#" class="btn-icon"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="contact-content">
+                  <a href="#" class="btn-icon"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="contact-content">
+                  <a href="#" class="btn-icon"
+                    ><i class="fa-brands fa-whatsapp"></i
+                  ></a>
+                </li>
+                <li class="contact-content">
+                  <a href="#" class="btn-icon"
+                    ><i class="fa-solid fa-at"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="about-container">
+              <h5>Sertifikat Kami</h5>
+              <ul class="certificates-container">
+                <li class="certificates-content">
+                  <a href="#" class="underline">Halal</a>
+                </li>
+                <li class="certificates-content">
+                  <a href="#" class="underline">PIRT</a>
+                </li>
+                <li class="certificates-content">
+                  <a href="#" class="underline">Nomor Induk Usaha</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-credit">
+          <h5>Achie Bakery | All Reserved</h5>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

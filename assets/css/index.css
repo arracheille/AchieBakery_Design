@@ -89,14 +89,16 @@ img {
   border-radius: var(--border-5);
   color: var(--cream);
   font-size: var(--f-p-14);
+  font-weight: 600;
   display: inline-block;
 }
 .btn-icon {
-  padding: 8px;
-  border-radius: var(--border-5);
   display: flex;
   justify-content: center;
-  display: inline-block;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: var(--border-5);
 }
 button {
   border: none;
@@ -300,7 +302,7 @@ footer .footer-container .footer-content p,
 footer .footer-container .footer-content a {
   color: var(--pink);
 }
-.about-content {
+.about-container {
   display: flex;
   flex-direction: column;
   gap: 15px;

@@ -201,3 +201,15 @@ section.hero .section-container {
   gap: 13px;
   text-align: center;
 }
+.item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.item-quantity button {
+  background-color: var(--dark-brown);
+  color: var(--cream);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
