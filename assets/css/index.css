@@ -119,17 +119,19 @@ form {
   border-bottom: solid 1px var(--dark-brown);
   padding: 15px 12px 8px 12px;
 }
-.input-container input {
+.input-container input,
+.input-container textarea {
   background-color: var(--cream);
   border: none;
   border-bottom: solid 1px var(--dark-brown);
   width: 100%;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   font-family: var(--poppins);
   font-weight: 500;
 }
 .input-container input::placeholder {
   font-size: var(--f-p-14);
+  color: var(--shadow-40);
 }
 .input-container i {
   position: absolute;
@@ -138,6 +140,7 @@ form {
   color: var(--shadow-60);
 }
 .input-container input:focus,
+.input-container textarea,
 select:focus {
   outline: none;
 }
@@ -151,6 +154,9 @@ select {
   color: var(--dark-pink);
   background-color: var(--cream);
   padding-bottom: 2px;
+}
+textarea{
+  resize: none;
 }
 input[type="checkbox"] {
   appearance: none;
@@ -178,6 +184,17 @@ input[type="checkbox"]:checked::after {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+table {
+  border-collapse: collapse;
+}
+table thead th {
+  font-family: var(--poltawski);
+  font-weight: 700;
+}
+table tr td {
+  font-family: var(--poppins);
+  font-weight: 500;
 }
 section {
   min-height: 100vh;
@@ -209,7 +226,8 @@ header nav .top-space {
   background-color: var(--dark-brown);
   height: 16px;
 }
-header nav .main-nav {
+header nav .main-nav,
+header .admin-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -217,7 +235,8 @@ header nav .main-nav {
   margin: auto;
   padding-bottom: 8px;
 }
-header nav .main-nav .nav-buttons .btn-icon {
+header nav .main-nav .nav-buttons .btn-icon,
+.ader nav .admin-nav .nav-buttons .btn-icon {
   background-color: var(--pink);
 }
 header nav .nav-container,
@@ -231,7 +250,7 @@ header nav .nav-container {
 header nav ul {
   gap: 15px;
 }
-header nav .nav-container .nav-links .nav-link a {
+header nav .nav-links .nav-link a {
   font-family: var(--poppins);
   font-weight: 500;
 }
